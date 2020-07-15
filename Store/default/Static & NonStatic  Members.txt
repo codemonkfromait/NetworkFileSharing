@@ -1,0 +1,56 @@
+static and non static members
+---------------------------------
+Java allows:
+ * Blocks 
+ * Data Members
+ * Methods
+ * Nested Classes
+to be declared as "static" or left out as "non static".
+
+
+non static blocks
+---------------------
+non static blocks are initializer blocks
+for objects of the class.
+
+They auto execute per object created and
+assign initial value to the non static
+data members.
+
+
+
+static blocks
+-----------------
+static blocks are initializer blocks
+for static data members of the class.
+
+They auto execute as a part of class 
+initialization process.
+
+
+
+non static data members
+--------------------------
+* Data members of a class are by default non static.
+* Non static data members are declared inside the object as a member.
+* Their life is equal to the life of the object.
+* They are accessible through the object.
+
+static data members
+-----------------------
+* Data members of a class can be declared as static.
+* static data members are not allocated as the object member but they remain as a member of the class.
+* Their life is equal to the life of the class.
+* They are accessible through the class reference.
+
+non static methods
+----------------------
+* Methods of a class are by default non static.
+* Non static methods require a caller object for invokation.
+* They can directly access all other members of the class.
+
+static methods
+-----------------
+* Methods of a class can be declared as static.
+* static methods dont require a caller object for invokation. Ideally they are called using the class reference.
+* They can directly access only the static members of the class.
